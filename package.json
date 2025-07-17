@@ -4,7 +4,7 @@
   "description": "Mi proyecto personal de API con Node.js",
   "main": "http.js",
   "scripts": {
-    "start": "node http.js",
+    "start": "node app.js",
     "dev2": "nodemon routing.js",
     "dev3": "nodemon express.js",
     "dev4": "nodemon app.js",
