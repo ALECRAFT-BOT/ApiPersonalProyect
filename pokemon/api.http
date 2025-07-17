@@ -1,0 +1,72 @@
+### recueperar información de un pokemon
+GET http://localhost:52132/pokemon/ditto
+
+
+
+### para crear un pokemon
+POST http://localhost:52132/pokemon
+Content-Type: application/json
+
+{
+  "name": "ditto",
+  "type": "normal",
+  "moves": [
+    "transform"
+  ]
+}
+
+
+
+### recueperar información de un pokemon con express
+GET http://localhost:3000/pokemon/ditto
+
+
+
+### para crear un pokemon con express
+POST http://localhost:3000/pokemon
+Content-Type: application/json
+
+{
+  "name": "ditto",
+  "type": "normal",
+  "moves": [
+    "transform"
+  ]
+}
+
+
+#########################################################################
+
+
+### recuperar informacion de peliculas del Json
+
+GET http://localhost:3000/peliculas
+
+### recuperar informacion de una pelicula del Json
+GET http://localhost:3000/peliculas/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+### recuperar informacion por un filtro
+GET http://localhost:3000/peliculas?genre=Action&&year=2008
+
+### crear una pelicula
+POST http://localhost:3000/peliculas
+Content-Type: application/json
+
+{
+  "title": "The Dark Knight 9",
+  "year": 2004,
+  "director": "Christopher Nolan",
+  "duration": 152,
+  "poster": "https://i.ebayimg.com/images/g/yokAAOSw8w1YARbm/s-l1200.jpg",
+  "genre": ["Action", "Crime", "Drama"],
+  "rate": 9.0
+}
+
+
+### actualizar una pelicula
+PATCH  http://localhost:3000/peliculas/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
+Content-Type: application/json
+
+{
+  "director": "Christopher Nolanas"
+}

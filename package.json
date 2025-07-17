@@ -1,0 +1,42 @@
+{
+  "name": "api-personal-proyect",
+  "version": "1.0.0",
+  "description": "Mi proyecto personal de API con Node.js",
+  "main": "http.js",
+  "scripts": {
+    "start": "node http.js",
+    "dev2": "nodemon routing.js",
+    "dev3": "nodemon express.js",
+    "dev4": "nodemon app.js",
+    "test": "npx servor ./web",
+    "watch": "node --watch routing.js"
+  },
+  "keywords": [
+    "api",
+    "nodejs",
+    "http",
+    "personal-project"
+  ],
+  "author": "walter toscano",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ALECRAFT-BOT/ApiPersonalProyect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ALECRAFT-BOT/ApiPersonalProyect/issues"
+  },
+  "homepage": "https://github.com/ALECRAFT-BOT/ApiPersonalProyect#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "servor": "^4.0.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "5.1.0",
+    "zod": "4.0.5"
+  }
+}
