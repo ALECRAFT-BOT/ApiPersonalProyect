@@ -13,6 +13,7 @@ app.use(cors({
       'http://127.0.0.1:5500',
       'http://localhost:3000',
       'https://peliculas.com',
+      'https://apipersonalproyect.onrender.com'
     ]
 
     if (ACCEPTED_ORIGINS.includes(origin)) {
